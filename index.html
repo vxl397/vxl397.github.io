@@ -10,10 +10,10 @@
   header { background:#121a2b; padding:22px 16px; text-align:center; }
   section { padding:40px 18px; max-width:920px; margin:auto; }
   .card { background:#121a2b; padding:20px; margin-bottom:18px; border-radius:12px; border:1px solid rgba(255,255,255,0.08); }
-  .about-flex{ display:flex; gap:20px; align-items:center; flex-wrap:wrap; }
-  .about-flex img{ width:160px; height:160px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.15); }
+  .about-center{ display:flex; flex-direction:column; align-items:center; text-align:center; }
+  .about-center img{ width:170px; height:170px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,0.15); margin-bottom:15px; }
   h1 { margin:0; }
-  h2 { margin:0 0 12px; }
+  h2 { margin:0 0 12px; text-align:center; }
   h3 { margin:0 0 6px; font-size:1rem; }
   p { margin:0 0 10px; color: rgba(232,238,252,0.86); }
   ul { margin:8px 0 0 18px; color: rgba(232,238,252,0.86); }
@@ -22,7 +22,7 @@
   .two-col { display:grid; grid-template-columns: 1fr 1fr; gap:14px; }
   .pillrow { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
   .pill { padding:7px 10px; border-radius:999px; border:1px solid rgba(255,255,255,0.10); background: rgba(255,255,255,0.03); color: rgba(232,238,252,0.78); font-weight:600; font-size:0.92rem;}
-  .btnrow{ display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; }
+  .btnrow{ display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; justify-content:center; }
   .btn{ display:inline-flex; align-items:center; justify-content:center; padding:10px 12px; border-radius:10px; border:1px solid rgba(255,255,255,0.10); background: rgba(255,255,255,0.04); color:#e8eefc; text-decoration:none; font-weight:700; }
   .btn:hover{ background: rgba(255,255,255,0.07); }
   footer { text-align:center; padding:20px 16px; background:#121a2b; color: rgba(232,238,252,0.70); }
@@ -35,7 +35,7 @@
 <header>
   <h1>Victor Lamadrid</h1>
   <p class="muted">Health Sciences • Pre-Med</p>
-  <div class="btnrow" style="justify-content:center;">
+  <div class="btnrow">
     <a class="btn" href="#about">About</a>
     <a class="btn" href="#resume">Resume</a>
     <a class="btn" href="#contact">Contact</a>
@@ -46,19 +46,12 @@
 
   <div id="about" class="card">
     <h2>About Me</h2>
-
-    <div class="about-flex">
-      <img src="profile.png?v=3" alt="Victor Lamadrid">
-
-      <div>
-        <p style="margin-top:0;">
-          I’m a Health Sciences student at the University of Miami on a pre-med track, interested in sports medicine and hands-on clinical experience.
-          I’m passionate about working in fast-paced environments, collaborating with teams, and staying calm under pressure.
-        </p>
-        <p class="muted" style="margin-bottom:0;">
-          (Tip: To change the photo, replace <strong>profile.png</strong> with a new image using the same name.)
-        </p>
-      </div>
+    <div class="about-center">
+      <img src="profile.png?v=4" alt="Victor Lamadrid">
+      <p>
+        I’m a Health Sciences student at the University of Miami on a pre-med track, interested in sports medicine and hands-on clinical experience.
+        I’m passionate about working in fast-paced environments, collaborating with teams, and staying calm under pressure.
+      </p>
     </div>
   </div>
 
@@ -92,10 +85,10 @@
     <div class="card" style="margin-top:14px;">
       <h3>Work Experience</h3>
       <ul>
-        <li><strong>Lifeguard I</strong> — Doral Central Park Aquatics (Jun 2025–Present): Monitored patron safety across multiple pools/waterpark; recognized for punctuality, reliability, and staying calm under pressure.</li>
-        <li><strong>Warehouse Inventory Control</strong> — EuroFreezer (Jun 2023–Present): Inventory management and order fulfillment; used inventory systems; strengthened time management and attention to detail.</li>
-        <li><strong>BOH Team Member</strong> — BurgerFi (Oct 2022–Jun 2023): Stocked supplies, prepared food with safe handling procedures, maintained output during peak service.</li>
-        <li><strong>BOH Crew Member</strong> — Diced LLC (Apr 2022–Oct 2022): Food prep, kitchen clean-up/closure, occasional supervision; built strong work ethic and reliable operations.</li>
+        <li><strong>Lifeguard I</strong> — Doral Central Park Aquatics (Jun 2025–Present)</li>
+        <li><strong>Warehouse Inventory Control</strong> — EuroFreezer (Jun 2023–Present)</li>
+        <li><strong>BOH Team Member</strong> — BurgerFi (Oct 2022–Jun 2023)</li>
+        <li><strong>BOH Crew Member</strong> — Diced LLC (Apr 2022–Oct 2022)</li>
       </ul>
     </div>
 
@@ -103,28 +96,24 @@
       <div class="card" style="margin:0;">
         <h3>Volunteer</h3>
         <p><strong>UHealth Kendall Hospital</strong> <span class="muted">(Summer 2022)</span></p>
-        <p class="muted">80+ hours; supported patient assistance and helped as a pediatrics secretary.</p>
+        <p class="muted">80+ hours volunteering in hospital environment.</p>
       </div>
 
       <div class="card" style="margin:0;">
         <h3>Certifications & Awards</h3>
         <ul>
-          <li>Lifeguarding (Deep Water) + CPR/AED + First Aid <span class="muted">(Apr 2025)</span></li>
-          <li>AP Scholar (College Board) <span class="muted">(Jul 2023)</span></li>
-          <li>National Hispanic Recognition Program (College Board) <span class="muted">(Aug 2023)</span></li>
-          <li>National Merit Letter of Commendation (NMSC) <span class="muted">(Sep 2023)</span></li>
+          <li>Lifeguarding + CPR/AED + First Aid (Apr 2025)</li>
+          <li>AP Scholar (Jul 2023)</li>
+          <li>National Hispanic Recognition Program (Aug 2023)</li>
+          <li>National Merit Letter of Commendation (Sep 2023)</li>
         </ul>
       </div>
     </div>
-
-    <p class="muted" style="margin-top:12px;">
-      Want this section to be shorter or more “med school” focused? I can tighten it to 4–6 bullets.
-    </p>
   </div>
 
   <div id="contact" class="card">
     <h2>Contact</h2>
-    <p><strong>Email:</strong> victorlamadrid1738@gmail.com</p>
+    <p><strong>Email:</strong> vxl397@miami.edu</p>
     <p><strong>Phone:</strong> (305) 967-9268</p>
     <p class="muted">Location: Miami, FL</p>
   </div>
